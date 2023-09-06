@@ -2,7 +2,7 @@
 ---
 ## 超快🚀超简单的切图工具,开包即用,乐享切图 🤣 
 
-<div align="center"><img src="https://github.com/Muziyu888/ImageSpliter-for-Midjourney/blob/main/pics/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(4).jpg?raw=true" alt="Example Image" width="400"></div>
+<div align="center"><img src="https://github.com/Muziyu888/ImageSpliter-for-Midjourney/blob/main/pics/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(4).jpg?raw=true" alt="Example Image" width="600"></div>
 
 我是一个**纯粹的python小白**,我从未学习过任何编程或者代码之类的
 我发现我找不到一个用于**批量切割MIDJOURNEY图片的工具**
@@ -27,7 +27,7 @@
 于是,我(chatgpt推荐)加入了**多进程处理**的功能, ✊🏼 直接把cpu占用率提升至**100%!!!!**
 所以当你使用这个程序仍然觉得切割速度很慢时,~~你要知道,这不是我的问题~~ :)
 
-<div align="center"><img src="https://github.com/Muziyu888/ImageSpliter-for-Midjourney/blob/main/pics/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(5).jpg?raw=true" alt="Example Image" width="400"></div>
+<div align="center"><img src="https://github.com/Muziyu888/ImageSpliter-for-Midjourney/blob/main/pics/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(5).jpg?raw=true" alt="Example Image" width="700"></div>
 
 ### 而且为了让程序看起来更加像那么回事儿
 我还添加了2个**重磅更新!**

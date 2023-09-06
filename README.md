@@ -2,6 +2,8 @@
 ---
 ## 超快🚀超简单的切图工具,开包即用,乐享切图 🤣 
 
+![IMAGE](https://github.com/Muziyu888/ImageSpliter-for-Midjourney/blob/main/pics/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(4).jpg?raw=true#height="10%"#width="10%")
+
 我是一个**纯粹的python小白**,我从未学习过任何编程或者代码之类的
 我发现我找不到一个用于**批量切割MIDJOURNEY图片的工具**
 于是!! **我打算自己做一个!!**  😤 

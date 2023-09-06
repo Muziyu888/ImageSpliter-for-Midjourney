@@ -1,0 +1,1 @@
+pyinstaller --onefile --noconsole --icon=app001.ico pic_split.py

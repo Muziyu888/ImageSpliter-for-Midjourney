@@ -1,13 +1,12 @@
 # Midjourney批量切图软件✂️
----
 ## 超快🚀超简单的切图工具,开包即用,乐享切图 🤣 
 
 <div align="center"><img src="https://github.com/Muziyu888/ImageSpliter-for-Midjourney/blob/main/pics/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(4).jpg?raw=true" alt="Example Image" width="600"></div>
 
 我是一个**纯粹的python小白**,我从未学习过任何编程或者代码之类的
-我发现我找不到一个用于**批量切割MIDJOURNEY图片的工具**
+我发现我找不到一个用于**批量切割✂️Midjourney图片的工具**
 于是!! **我打算自己做一个!!**  😤 
-于是我成为了**OPENAI**的plus会员(~~我才不是单纯的想尝试chatgpt-4.0和代码解释器~~:)
+于是我成为了**OPENAI**的💵**plus**💵会员(~~我才不是单纯的想尝试chatgpt-4.0和代码解释器~~):)
 
 
 ### 我在制作的过程当中,遇到了非常多的问题,比如:

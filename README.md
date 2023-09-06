@@ -59,6 +59,7 @@
 以下是我与ChatGPT的问答链接,如果你感兴趣的话,你可以点开看一看,虽然他们只会浪费你几分钟的时间,且你不会得到任何收益.
 
 [第一次聊天:建立基本的代码框架](https://chat.openai.com/share/f65686db-bae7-4b7d-83d4-f870a268463e)
+
 [第二次聊天:修复各种bug](https://chat.openai.com/share/ba836d06-5c96-42d8-85d1-b158e39b21d8)
 
 #### 这是我对chatgpt提出的需求!这可是我思考了2个小时的成果!

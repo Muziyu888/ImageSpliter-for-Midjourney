@@ -6,7 +6,7 @@ import sys
 from PIL import Image
 import time
 import multiprocessing
-from multiprocessing import Pool, Process
+from multiprocessing import Pool
 from Ui_untitled import Ui_Form
 
 def split_image(image_path, rows, cols, image_format, output_directory):
@@ -28,7 +28,6 @@ def split_image(image_path, rows, cols, image_format, output_directory):
             img_cropped = img.crop((left, upper, right, lower))
             output_path = os.path.join(output_directory, f"{base_name}_{i}_{j}.{image_format.lower()}")
             img_cropped.save(output_path, image_format.upper() if image_format != 'JPG' else 'JPEG')
-
 
 class ImageSplitterApp(QWidget, Ui_Form):
     def __init__(self):
@@ -63,26 +62,28 @@ class ImageSplitterApp(QWidget, Ui_Form):
         self.current_image_index = 0
         options = QFileDialog.Options()
         file_names, _ = QFileDialog.getOpenFileNames(self, "Select Image(s)", "", "Images (*.png *.jpg *.jpeg *.bmp *.gif *.tiff *.ico);;All Files (*)", options=options)
+        
         if file_names:
             self.selected_images = file_names
+            
             self.lineEdit.setText(';'.join(file_names))
             self.display_image(self.selected_images[0])
-            self.update_graphics_view()
-            
-        self.update_image_label()
+            self.update_graphics_view()       
+            self.update_image_label()
     
     def load_folder(self):
         self.current_image_index = 0
         folder_path = QFileDialog.getExistingDirectory(self, "Select Folder")
+        
         if folder_path:
             image_files = [f for f in os.listdir(folder_path) if f.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.gif', '.tiff', '.ico'))]
             self.selected_images = [os.path.join(folder_path, img_file) for img_file in image_files]
             self.lineEdit.setText(folder_path)
+            
             if self.selected_images:
                 self.display_image(self.selected_images[0])
                 self.update_graphics_view()
-        
-        self.update_image_label()
+                self.update_image_label()
         
     def update_image_label(self):
         self.label_5.setText(f"{self.current_image_index + 1} / {len(self.selected_images)}")
@@ -100,7 +101,6 @@ class ImageSplitterApp(QWidget, Ui_Form):
     def handle_resize_timeout(self):
         if self.selected_images:
             self.display_image(self.selected_images[self.current_image_index])
-            self.update_graphics_view()
             
     def display_image(self, image_path):
         pixmap = QPixmap(image_path)
@@ -169,7 +169,6 @@ class ImageSplitterApp(QWidget, Ui_Form):
 
         elapsed_time = round(end_time - start_time, 2)
         QMessageBox.information(self, "成功", f"切割成功图片成功 \n共切割 {len(self.selected_images)} 张图片 \n花费 {elapsed_time} 秒.")
-
                    
     def previous_image(self):
         self.current_image_index = (self.current_image_index - 1) % len(self.selected_images)
@@ -195,7 +194,9 @@ class ImageSplitterApp(QWidget, Ui_Form):
         for url in urls:
             path = url.toLocalFile()
             file_extension = os.path.splitext(path)[-1].lower()
-            if os.path.isfile(path) and file_extension in ['.png', '.jpg', '.jpeg', '.bmp', '.gif', '.tiff', '.ico']:
+            if os.path.isfile(path) and file_extension in [
+                '.png', '.jpg', '.jpeg', '.bmp', '.gif', '.tiff', '.ico'
+                ]:
                 image_files.append(path)
             elif os.path.isdir(path):
                 folder_files.append(path)
